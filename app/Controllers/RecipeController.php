@@ -10,11 +10,9 @@ class RecipeController extends BaseController
     public function index()
     {
         $recipeModel = model(RecipeModel::class);
-        // echo var_dump($recipe->findAll());
-        $recipe = new \App\Entities\Recipe;
-        $recipe->recipe_name = 'Bakso Wonogiri';
-        $recipe->recipe_description = 'A comfort food. It is basically a meatball soup served with noodles and vermicelli';
-        $recipe->country_id = 1;
-        $recipeModel->save($recipe);
+        $data['title'] = 'Recipe List';
+        $data['recipes'] = $recipeModel->findAll();
+
+        return view('default/recipe_home', $data);
     }
 }
