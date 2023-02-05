@@ -32,6 +32,8 @@ $routes->set404Override();
 $routes->get('/', 'RecipeController::index');
 $routes->get('/recipes', 'RecipeController::index');
 
+service('auth')->routes($routes);
+
 
 /*
  * --------------------------------------------------------------------
