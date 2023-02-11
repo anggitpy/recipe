@@ -29,8 +29,8 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'RecipeController::index');
-$routes->get('/recipes', 'RecipeController::index');
+$routes->get('/', 'RecipeController::index', ['filter' => 'session']);
+$routes->get('/recipes', 'RecipeController::index', ['filter' => 'session']);
 
 service('auth')->routes($routes);
 

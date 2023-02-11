@@ -9,19 +9,24 @@ class RecipeController extends BaseController
 {
     public function index()
     {
-        if (auth()->loggedIn()) 
-        {
-            $recipeModel = model(RecipeModel::class);
-            $data['user'] = auth()->user();            
-    
-            $data['title'] = 'Recipe List';
-            $data['recipes'] = $recipeModel->findAll();
-    
-            return view('default/recipe_home', $data);
-        }
+        $recipeModel = model(RecipeModel::class);
+        $data['user'] = auth()->user();            
 
-        return redirect()->to('/login');
+        $data['title'] = 'Recipe List';
+        $data['recipes'] = $recipeModel->findAll();
+
+        return view('default/recipe_home', $data);
+
+        // if (auth()->loggedIn()) 
+        // {
+            
+        // }
+
+        // return redirect()->to('/login');
 
         
     }
+
+    
+
 }
