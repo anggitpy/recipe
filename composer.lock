@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "623f3718440ef7723553aa22c3c0d392",
+    "content-hash": "72294cac231533d0c5df29bd7467daa8",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -148,12 +148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/shield.git",
-                "reference": "890729dc90bb96c87810640eaa182b17307915b6"
+                "reference": "f13ce6dcc8bf95066d5fe8d92e095a3bf4964bdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/shield/zipball/890729dc90bb96c87810640eaa182b17307915b6",
-                "reference": "890729dc90bb96c87810640eaa182b17307915b6",
+                "url": "https://api.github.com/repos/codeigniter4/shield/zipball/f13ce6dcc8bf95066d5fe8d92e095a3bf4964bdf",
+                "reference": "f13ce6dcc8bf95066d5fe8d92e095a3bf4964bdf",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "source": "https://github.com/codeigniter4/shield"
             },
-            "time": "2023-02-04T03:55:00+00:00"
+            "time": "2023-02-09T17:44:48+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1063,16 +1063,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.1",
+            "version": "9.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9a52e8385f3e432d7e8ecab72c4d211a67223285"
+                "reference": "e7b1615e3e887d6c719121c6d4a44b0ab9645555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9a52e8385f3e432d7e8ecab72c4d211a67223285",
-                "reference": "9a52e8385f3e432d7e8ecab72c4d211a67223285",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7b1615e3e887d6c719121c6d4a44b0ab9645555",
+                "reference": "e7b1615e3e887d6c719121c6d4a44b0ab9645555",
                 "shasum": ""
             },
             "require": {
@@ -1145,7 +1145,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.1"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.3"
             },
             "funding": [
                 {
@@ -1161,7 +1161,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-03T19:31:30+00:00"
+            "time": "2023-02-04T13:37:15+00:00"
         },
         {
             "name": "psr/container",

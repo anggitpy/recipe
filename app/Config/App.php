@@ -22,7 +22,8 @@ class App extends BaseConfig
      * explicitly and never rely on auto-guessing, especially in production
      * environments.
      */
-    public string $baseURL = 'https://recipe.test/';
+    public string $baseURL = '';
+    public string $siteName = 'Bakso Enak';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

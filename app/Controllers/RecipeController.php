@@ -12,7 +12,7 @@ class RecipeController extends BaseController
         $recipeModel = model(RecipeModel::class);
         $data['user'] = auth()->user();            
 
-        $data['title'] = 'Recipe List';
+        $data['title'] = service('settings')->get('SiteAttr.address');;
         $data['recipes'] = $recipeModel->findAll();
 
         return view('default/recipe_home', $data);
@@ -25,6 +25,12 @@ class RecipeController extends BaseController
         // return redirect()->to('/login');
 
         
+    }
+
+    public function enak()
+    {
+        service('settings')->set('App.siteName', 'My Great Site');
+        echo 'saved';
     }
 
     
